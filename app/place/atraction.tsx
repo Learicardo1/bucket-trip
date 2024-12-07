@@ -1,11 +1,15 @@
-import { View, Text, Image ,StyleSheet, Dimensions} from 'react-native'
-import React from 'react'
+import { View, Text, Image ,StyleSheet, Dimensions, Pressable, ScrollView} from 'react-native'
+import {useState} from 'react'
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-const {width, height} = Dimensions.get('screen');
-import Tags from '~/components/Tags';
+const {width} = Dimensions.get('screen');
+const {height} = Dimensions.get('window');
+
 import ThreeStarRating from '~/components/PopularityStars';
 const Atraction = () => {
-  
+    const [added, setAdded] = useState(false);
+    const addEvent = () => {
+        setAdded(!added);
+    }    
   return (
     <View style={styles.container}>
           
@@ -20,15 +24,47 @@ const Atraction = () => {
               {/*<Text>hello</Text>*/}
               <ThreeStarRating rating={90} />
           </View>
-      
+       
           <View style={styles.placeMarker}>
               <FontAwesome name="map-marker" size={18} color="red" />
               <Text style={styles.placeMarkerText}>New York</Text>
+              
           </View>
-      
-          <Text style={styles.descriptionText}>     Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of           19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.
-              The bridge is featured on many walking and bike tours, and there are also sightseeing cruises and helicopter flights that offer views of the bridge</Text>
+            
+           
+           
+           <ScrollView style={styles.scrollView} >
+                <Text style={styles.descriptionText}>Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of           19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.
+              The bridge is featured on many walking and bike tours, and there are also sightseeing cruises and helicopter flights that offer views of the bridge
+              Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of           19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of 19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.
+              The bridge is featured on many walking and bike tours, and there are also sightseeing cruises and helicopter flights that offer views of the bridge
+              Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of           19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.</Text>
+           </ScrollView>
+           
+             {/**/}
+    
+    {/*footer*/}
+          <View className=' bottom-0 left-0 right-0 border-t-2 border-gray-300 p-5  flex-row items-center'>
+            <Text className='mr-auto text-2xl font-semibold'>Free</Text>
+            <View className=" justify-center items-center">
+                <Pressable
+                    onPress={addEvent}
+                    className={`rounded-md p-3 px-4 w-40 h-15 justify-center items-center ${added ? 'bg-red-500' : 'bg-green-500'}`}>
+                        <Text className="text-lg font-bold text-white">
+                             {added ? 'Add to my trip' : 'You are visiting'}
+                        </Text>
+                </Pressable>
+            </View>
+          </View>
+        
+        {/**/}
+
     </View>
+    
+    
+
+
+    
   )
 }
 
@@ -85,11 +121,17 @@ placeMarkerText:{
     //left: 0
 },
 descriptionText:{
+    flex:1,
     fontSize: 16,
+    lineHeight: 22,
     color: '#555555',
     textAlign: 'left',
     paddingTop:5,
     paddingHorizontal:15,
     backgroundColor: '#F5f5f5',
-}
+},
+scrollView: {
+    flex: 1, // Takes up remaining space above the footer
+  },
+  
 })
