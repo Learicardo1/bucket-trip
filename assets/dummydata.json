@@ -1,0 +1,246 @@
+
+{
+    "attractions": [
+        {
+            "id": 1,
+            "title": "Brooklyn Bridge",
+            "description": "Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of 19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire. The bridge is featured on many walking and bike tours, and there are also sightseeing cruises and helicopter flights that offer views of the bridge.Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of 19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of 19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire. The bridge is featured on many walking and bike tours, and there are also sightseeing cruises and helicopter flights that offer views of the bridge Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of 19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating":"50",
+            "uri": "https://imgur.com/dfno5i2.jpg",
+            "opening_hours": {
+                "monday": "24 hours",
+                "tuesday": "24 hours",
+                "wednesday": "24 hours",
+                "thursday": "24 hours",
+                "friday": "24 hours",
+                "saturday": "24 hours",
+                "sunday": "24 hours"
+            },
+            "ticket_price": "Free",
+            "category": "Bridge",
+            "tags": ["Bridge", "Historical", "Tourist Spot"]
+        },
+        {
+            "id": 2,
+            "title": "Katz's Delicatessen",
+            "description": "Katz's Delicatessen is a famous Jewish deli in New York City, known for its iconic pastrami sandwiches and rich history. Opened in 1888, it remains a staple of the city's culinary scene and a must-visit for foodies.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.7",
+            "uri": "https://imgur.com/8M2mvO7.jpg",
+            "opening_hours": {
+                "monday": "8:00 AM - 10:00 PM",
+                "tuesday": "8:00 AM - 10:00 PM",
+                "wednesday": "8:00 AM - 10:00 PM",
+                "thursday": "8:00 AM - 10:00 PM",
+                "friday": "8:00 AM - 10:00 PM",
+                "saturday": "8:00 AM - 10:00 PM",
+                "sunday": "8:00 AM - 10:00 PM"
+            },
+            "ticket_price": "Varies",
+            "category": "Restaurant",
+            "tags": ["Food", "Historical", "Tourist Spot"]
+        },
+        {
+            "id": 3,
+            "title": "Central Park",
+            "description": "Central Park is a vast green space in the heart of Manhattan, offering scenic walking trails, lakes, gardens, and recreational activities. It's one of the most famous parks in the world and a favorite for both locals and tourists.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.8",
+            "uri": "https://imgur.com/U0eGqzG.jpg",
+            "opening_hours": {
+                "monday": "6:00 AM - 1:00 AM",
+                "tuesday": "6:00 AM - 1:00 AM",
+                "wednesday": "6:00 AM - 1:00 AM",
+                "thursday": "6:00 AM - 1:00 AM",
+                "friday": "6:00 AM - 1:00 AM",
+                "saturday": "6:00 AM - 1:00 AM",
+                "sunday": "6:00 AM - 1:00 AM"
+            },
+            "ticket_price": "Free",
+            "category": "Park",
+            "tags": ["Nature", "Tourist Spot", "Outdoor"]
+        },
+        {
+            "id": 4,
+            "title": "Empire State Building",
+            "description": "The Empire State Building is a world-renowned skyscraper and one of the most iconic landmarks in New York City. Offering breathtaking views of the city from its observation deck, it's a must-visit for tourists.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.7",
+            "uri": "https://imgur.com/RRkKnHp.jpg",
+            "opening_hours": {
+                "monday": "8:00 AM - 2:00 AM",
+                "tuesday": "8:00 AM - 2:00 AM",
+                "wednesday": "8:00 AM - 2:00 AM",
+                "thursday": "8:00 AM - 2:00 AM",
+                "friday": "8:00 AM - 2:00 AM",
+                "saturday": "8:00 AM - 2:00 AM",
+                "sunday": "8:00 AM - 2:00 AM"
+            },
+            "ticket_price": "$42",
+            "category": "Landmark",
+            "tags": ["Historic", "Tourist Spot", "Skyscraper"]
+        },
+        {
+            "id": 5,
+            "title": "The Metropolitan Museum of Art",
+            "description": "The Met is one of the largest and most prestigious art museums in the world. It houses over 2 million works of art, ranging from ancient times to modern day, covering a vast array of cultures and genres.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.8",
+            "uri": "https://imgur.com/s6gHX1H.jpg",
+            "opening_hours": {
+                "monday": "10:00 AM - 5:30 PM",
+                "tuesday": "10:00 AM - 5:30 PM",
+                "wednesday": "10:00 AM - 5:30 PM",
+                "thursday": "10:00 AM - 5:30 PM",
+                "friday": "10:00 AM - 5:30 PM",
+                "saturday": "10:00 AM - 5:30 PM",
+                "sunday": "10:00 AM - 5:30 PM"
+            },
+            "ticket_price": "$25",
+            "category": "Museum",
+            "tags": ["Art", "Culture", "Tourist Spot"]
+        },
+        {
+            "id": 6,
+            "title": "Statue of Liberty",
+            "description": "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor. A symbol of freedom and democracy, it has welcomed millions of immigrants to the U.S. since 1886.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.8",
+            "uri": "https://imgur.com/tNxydps.jpg",
+            "opening_hours": {
+                "monday": "8:30 AM - 4:00 PM",
+                "tuesday": "8:30 AM - 4:00 PM",
+                "wednesday": "8:30 AM - 4:00 PM",
+                "thursday": "8:30 AM - 4:00 PM",
+                "friday": "8:30 AM - 4:00 PM",
+                "saturday": "8:30 AM - 4:00 PM",
+                "sunday": "8:30 AM - 4:00 PM"
+            },
+            "ticket_price": "$18",
+            "category": "Landmark",
+            "tags": ["History", "Tourist Spot", "Symbol"]
+        },
+        {
+            "id": 7,
+            "title": "Times Square",
+            "description": "Times Square is a major commercial and tourist hub in New York City. Known for its bright lights, massive electronic billboards, and bustling atmosphere, it's an iconic spot for visitors.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.7",
+            "uri": "https://imgur.com/g49V8h2.jpg",
+            "opening_hours": {
+                "monday": "24 hours",
+                "tuesday": "24 hours",
+                "wednesday": "24 hours",
+                "thursday": "24 hours",
+                "friday": "24 hours",
+                "saturday": "24 hours",
+                "sunday": "24 hours"
+            },
+            "ticket_price": "Free",
+            "category": "Entertainment",
+            "tags": ["Tourist Spot", "Shopping", "Nightlife"]
+        },
+        {
+            "id": 8,
+            "title": "Broadway Theatre",
+            "description": "Broadway is home to some of the best musicals and plays in the world. A visit to Broadway Theatre is a quintessential New York experience, offering a wide variety of shows in iconic venues.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.9",
+            "uri": "https://imgur.com/ZJ8aVtF.jpg",
+            "opening_hours": {
+                "monday": "7:00 PM - 10:00 PM",
+                "tuesday": "7:00 PM - 10:00 PM",
+                "wednesday": "7:00 PM - 10:00 PM",
+                "thursday": "7:00 PM - 10:00 PM",
+                "friday": "7:00 PM - 10:00 PM",
+                "saturday": "7:00 PM - 10:00 PM",
+                "sunday": "7:00 PM - 10:00 PM"
+            },
+            "ticket_price": "$50 - $200",
+            "category": "Theatre",
+            "tags": ["Culture", "Tourist Spot", "Entertainment"]
+        },
+        {
+            "id": 9,
+            "title": "The High Line",
+            "description": "The High Line is a unique elevated park built on a former railway track. Offering green spaces, art installations, and stunning views of the city, it has become a must-see spot for both locals and tourists.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.7",
+            "uri": "https://imgur.com/ZLoN1xv.jpg",
+            "opening_hours": {
+                "monday": "7:00 AM - 10:00 PM",
+                "tuesday": "7:00 AM - 10:00 PM",
+                "wednesday": "7:00 AM - 10:00 PM",
+                "thursday": "7:00 AM - 10:00 PM",
+                "friday": "7:00 AM - 10:00 PM",
+                "saturday": "7:00 AM - 10:00 PM",
+                "sunday": "7:00 AM - 10:00 PM"
+            },
+            "ticket_price": "Free",
+            "category": "Park",
+            "tags": ["Outdoor", "Tourist Spot", "Nature"]
+        },
+        {
+            "id": 10,
+            "title": "Rockefeller Center",
+            "description": "The Rockefeller Center is a popular entertainment and shopping complex located in Midtown Manhattan. Famous for its ice rink and the annual Christmas tree lighting, it's a hub for cultural events.",
+            "location": {
+                "city": "New York",
+                "state": "NY",
+                "country": "USA"
+            },
+            "rating": "4.6",
+            "uri": "https://imgur.com/cXcwLHw.jpg",
+            "opening_hours": {
+                "monday": "8:00 AM - 11:00 PM",
+                "tuesday": "8:00 AM - 11:00 PM",
+                "wednesday": "8:00 AM - 11:00 PM",
+                "thursday": "8:00 AM - 11:00 PM",
+                "friday": "8:00 AM - 11:00 PM",
+                "saturday": "8:00 AM - 11:00 PM",
+                "sunday": "8:00 AM - 11:00 PM"
+            },
+            "ticket_price": "$30",
+            "category": "Landmark",
+            "tags": ["Shopping", "Tourist Spot", "Entertainment"]
+        }
+        
+    ]
+}

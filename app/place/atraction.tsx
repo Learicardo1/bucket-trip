@@ -3,49 +3,46 @@ import {useState} from 'react'
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 const {width} = Dimensions.get('screen');
 const {height} = Dimensions.get('window');
-
+import dummydata from '~/assets/dummydata.json'; 
 import ThreeStarRating from '~/components/PopularityStars';
+import AttractionListItem from '~/components/AttractionListItem';
+import attractions from '~/assets/attractions.json';
 const Atraction = () => {
     const [added, setAdded] = useState(false);
     const addEvent = () => {
         setAdded(!added);
     }    
+    const attraction = dummydata.attractions[0];
+    console.log(attraction)
   return (
     <View style={styles.container}>
           
           <Image
               style={styles.placeImage}
-              source={{uri: 'https://imgur.com/dfno5i2.jpg'}}
+              source={{uri: attraction.uri}}
           />
 
 
           <View style={styles.titleContainer}>
-              <Text style={styles.title}>Brooklin Bridge</Text>
+              <Text style={styles.title}>{attraction.title}</Text>
               {/*<Text>hello</Text>*/}
-              <ThreeStarRating rating={90} />
+              <ThreeStarRating rating={attraction.rating} />
           </View>
        
           <View style={styles.placeMarker}>
               <FontAwesome name="map-marker" size={18} color="red" />
-              <Text style={styles.placeMarkerText}>New York</Text>
-              
+              <Text style={styles.placeMarkerText}>{attraction.location.city}</Text>
           </View>
-            
-           
-           
+          <AttractionListItem  attraction={attractions}/>
            <ScrollView style={styles.scrollView} >
-                <Text style={styles.descriptionText}>Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of           19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.
-              The bridge is featured on many walking and bike tours, and there are also sightseeing cruises and helicopter flights that offer views of the bridge
-              Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of           19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of 19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.
-              The bridge is featured on many walking and bike tours, and there are also sightseeing cruises and helicopter flights that offer views of the bridge
-              Brooklyn Bridge, suspension bridge spanning the East River from Brooklyn to Manhattan Island, New York City. A brilliant feat of           19th-century engineering, the Brooklyn Bridge was the first bridge to use steel for cable wire.</Text>
+                <Text style={styles.descriptionText}>{attraction.description}</Text>
            </ScrollView>
            
              {/**/}
     
     {/*footer*/}
           <View className=' bottom-0 left-0 right-0 border-t-2 border-gray-300 p-5  flex-row items-center'>
-            <Text className='mr-auto text-2xl font-semibold'>Free</Text>
+            <Text className='mr-auto text-2xl font-semibold'>{attraction.ticket_price}</Text>
             <View className=" justify-center items-center">
                 <Pressable
                     onPress={addEvent}
@@ -107,6 +104,7 @@ placeMarker:{
     color: 'black',
     textAlign: 'left',
     paddingLeft: 15,
+    paddingBottom: 5,
     backgroundColor: '#F5f5f5',
   
 },
@@ -115,10 +113,6 @@ placeMarkerText:{
     fontWeight: 400,
     color: '#888888',
     textAlign: 'left',
-    
-    //position: 'absolute',
-    //bottom: 0,
-    //left: 0
 },
 descriptionText:{
     flex:1,
