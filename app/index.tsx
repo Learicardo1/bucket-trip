@@ -22,6 +22,7 @@ export default function Home() {
           onToggleCompletion={() => console.log('Toggled')}
           isCompleted={false}
           
+          
         />)}
         />
         <Link href={{ pathname: '/details', params: { name: 'Dan' } }} asChild>

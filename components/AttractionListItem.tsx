@@ -6,7 +6,7 @@ import attractions from '~/assets/attractions.json';
 
 
 
-const AttractionListItem = (attractions) => {
+const AttractionListItem = ( attractions) => {
   const [isCompleted, setIsCompleted] = useState(false);
  
  console.log(attractions.title)
@@ -29,7 +29,7 @@ const AttractionListItem = (attractions) => {
       </TouchableOpacity>
 
       {/* Item Content */}
-      <TouchableOpacity style={styles.content} onPress={onItemPress}>
+      <TouchableOpacity style={styles.content} onPress={onItemPress}  >
         <Text style={[styles.title, isCompleted && styles.completedTitle]}>
           {attractions.title}
         </Text>
